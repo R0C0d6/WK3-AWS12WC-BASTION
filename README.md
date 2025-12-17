@@ -1,11 +1,10 @@
 Building and configuring a secure network environment featuring public and private subnets, proper routing, and restricted, well-managed connectivity.
 
+Organizations frequently need to keep private workloads such as databases and application servers—shielded from direct internet exposure while still allowing restricted administrative access.
+The task was to model a secure, well-designed AWS VPC setup that applies network segmentation and enforces least-privilege access principles.
 This project showcases the design and deployment of a secure, segmented network architecture on AWS, aligned with best practices outlined in the AWS Well-Architected Framework. It incorporates network isolation, tightly controlled access, and layered security controls to model a production-ready environment.
     
 For this project, the architecture was implemented within a single Availability Zone to make testing and visualization easier. In a real-world, production or enterprise setup, the architecture would be spread across multiple Availability Zones to ensure high availability and improved fault tolerance.
-
-Organizations frequently need to keep private workloads such as databases and application servers—shielded from direct internet exposure while still allowing restricted administrative access.
-The task was to model a secure, well-designed AWS VPC setup that applies network segmentation and enforces least-privilege access principles.
 
 APPROACH:
     Design and set up a custom VPC with both public and private subnets.
@@ -16,7 +15,7 @@ APPROACH:
 
 
 ARCHITECTURE DIAGRAM
-![Architecture Diagram](https://i.postimg.cc/fbHrg5fT/Whats-App-Image-2025-12-17-at-13-28-11.jpg)
+![Architecture Diagram](https://i.postimg.cc/Hsf88M5D/z-Chat-GPT-Image-Dec-17-2025-06-48-02-PM.png)
 
 
 VPC Creation:
