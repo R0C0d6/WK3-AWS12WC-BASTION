@@ -1,11 +1,11 @@
 Building and configuring a secure network environment featuring public and private subnets, proper routing, and restricted, well-managed connectivity.
 
-Organizations frequently need to keep private workloads such as databases and application servers—shielded from direct internet exposure while still allowing restricted administrative access.
+Organizations frequently need to keep private workloads such as databases and application servers, shielded from direct internet exposure while still allowing restricted administrative access.
 The task was to model a secure, well-designed AWS VPC setup that applies network segmentation and enforces least-privilege access principles.
 This project showcases the design and deployment of a secure, segmented network architecture on AWS, aligned with best practices outlined in the AWS Well-Architected Framework. It incorporates network isolation, tightly controlled access, and layered security controls to model a production-ready environment.
-    
-For this project, the architecture was implemented within a single Availability Zone to make testing and visualization easier. In a real-world, production or enterprise setup, the architecture would be spread across multiple Availability Zones to ensure high availability and improved fault tolerance.
 
+ARCHITECTURE DIAGRAM
+![Architecture Diagram](https://i.postimg.cc/Hsf88M5D/z-Chat-GPT-Image-Dec-17-2025-06-48-02-PM.png)
 APPROACH:
     Design and set up a custom VPC with both public and private subnets.
     Configure routing components, including route tables, an Internet Gateway (IGW), and a NAT Gateway.
@@ -13,12 +13,8 @@ APPROACH:
     Apply Security Groups and Network ACLs (NACLs) to enforce a defense-in-depth security model.
     Test and confirm proper network isolation and controlled access between components.
 
-
-ARCHITECTURE DIAGRAM
-![Architecture Diagram](https://i.postimg.cc/Hsf88M5D/z-Chat-GPT-Image-Dec-17-2025-06-48-02-PM.png)
-
-
 VPC Creation:
+For this project, the architecture was implemented within a single Availability Zone to make testing and visualization easier. In a real-world, production or enterprise setup, the architecture would be spread across multiple Availability Zones to ensure high availability and improved fault tolerance.
 Create a custom VPC with a CIDR block of 10.0.0.0/16.
     ![VPC](https://i.postimg.cc/ZYfDbwGd/Screenshot-2025-10-19-111544.png)
     ![VPC](https://i.postimg.cc/8kWB3tTX/Screenshot-2025-10-19-111624.png)
